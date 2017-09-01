@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "10": "node 10-index.js",
+    "11": "node 11-index.js",
+    "12": "node 12-index.js",
+    "13": "node 13-index.js",
+    "14": "node 14-index.js",
+    "15": "node 15-index.js",
+    "01": "node 01-index.js",
+    "02": "node 02-index.js",
+    "03": "node 03-index.js",
+    "04": "node 04-index.js",
+    "05": "node 05-index.js",
+    "06": "node 06-index.js",
+    "07": "node 07-index.js",
+    "08": "node 08-index.js",
+    "09": "node 09-index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.2"
+  }
+}
