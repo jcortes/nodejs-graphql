@@ -2,14 +2,14 @@ const videoA = {
     id: "1",
     title: "First Video",
     duration: 180,
-    watched: true
+    released: true
 };
 
 const videoB = {
     id: "2",
     title: "Second Video",
     duration: 120,
-    watched: true
+    released: false
 };
 
 const videos = [videoA, videoB];
@@ -32,6 +32,14 @@ const createVideo = ({ title, duration, released }) => {
     return video;
 };
 
+const getObjectById = (type, id) => {
+    const types = {
+        video: getVideoById
+    };
+    return types[type](id);
+}
+
 exports.getVideoById = getVideoById;
 exports.getVideos = getVideos;
 exports.createVideo = createVideo;
+exports.getObjectById = getObjectById;
