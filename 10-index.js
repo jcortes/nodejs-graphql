@@ -108,6 +108,6 @@ server.listen(PORT, () => {
 //     id
 //   	title
 //     duration
-//     watched
+//     released
 // 	}
 // }

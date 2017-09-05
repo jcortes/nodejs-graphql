@@ -33,9 +33,9 @@ const videoType = new GraphQLObjectType({
       type: GraphQLInt,
       description: "The duration of the video (in seconds)"
     },
-    watched: {
+    released: {
       type: GraphQLBoolean,
-      description: "Whether or not the viewer has watched the video"
+      description: "Whether or not the viewer has released the video"
     }
   }
 });
@@ -76,6 +76,6 @@ server.listen(PORT, () => {
 //     id
 //   	title
 //     duration
-//     watched
+//     released
 // 	}
 // }

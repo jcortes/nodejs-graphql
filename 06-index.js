@@ -30,9 +30,9 @@ const videoType = new GraphQLObjectType({
       type: GraphQLInt,
       description: "The duration of the video (in seconds)"
     },
-    watched: {
+    released: {
       type: GraphQLBoolean,
-      description: "Whether or not the viewer has watched the video"
+      description: "Whether or not the viewer has released the video"
     }
   }
 });
@@ -48,7 +48,7 @@ const queryType = new GraphQLObjectType({
           id: "1",
           title: "First Video",
           duration: 180,
-          watched: true
+          released: true
         });
       })
     }
@@ -64,14 +64,14 @@ const videoA = {
   id: "1",
   title: "First Video",
   duration: 180,
-  watched: true
+  released: true
 };
 
 const videoB = {
   id: "2",
   title: "Second Video",
   duration: 120,
-  watched: true
+  released: true
 };
 
 const videos = [videoA, videoB];
@@ -91,6 +91,6 @@ server.listen(PORT, () => {
 //     id
 //   	title
 //     duration
-//     watched
+//     released
 // 	}
 // }

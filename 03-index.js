@@ -7,7 +7,7 @@ const schema = buildSchema(`
     id: ID,
     title: String,
     duration: Int,
-    watched: Boolean
+    released: Boolean
   }
 
   type Query {
@@ -24,7 +24,7 @@ const resolvers = {
     id: "1",
     title: "First Video",
     duration: 180,
-    watched: true
+    released: true
   })
 };
 
@@ -34,7 +34,7 @@ const query = `
       id
       title
       duration
-      watched
+      released
     }
   }
 `;
